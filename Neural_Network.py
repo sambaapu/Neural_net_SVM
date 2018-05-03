@@ -178,5 +178,5 @@ class NeuralNetwork:
         return 1.0/(1.0+exp(-x))
 
     # Activation function derivative (sigmoid)
-    def sigmoid_gradient(self, transfer):
-	return transfer*(1.0-transfer)
+    def sigmoid_gradient(self, x):
+        return x*(1-x)
