@@ -1,6 +1,6 @@
 """
  NeuralNetworkClass.py  (authors: Sambit, Rosalin, Teja)
- Note: This code is heavily influenced by https://machinelearningmastery.com/implement-backpropagation-algorithm-scratch-python/
+ Reference: https://machinelearningmastery.com/implement-backpropagation-algorithm-scratch-python/
  Here we will define a neural Network class for multiclass classification.
  
 """
