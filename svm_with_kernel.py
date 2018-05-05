@@ -136,6 +136,7 @@ if __name__ == "__main__":
 
 	def lin_separable_data_gen():
 		# generate training data in the 2-d case
+		# to generste linear separable data for hard svm test
 		mean1 = np.array([0, 2])
 		mean2 = np.array([2, 0])
 		cov = np.array([[0.8, 0.6], [0.6, 0.8]])
@@ -146,6 +147,9 @@ if __name__ == "__main__":
 		return X1, y1, X2, y2
 
 	def nonlin_separable_data_gen():
+		
+		# generate non-linearly separable data for testing of polynomial 
+		# and gaussian kernel SVM in 2d case
 		mean1 = [-1, 2]
 		mean2 = [1, -1]
 		mean3 = [4, -4]
@@ -160,7 +164,8 @@ if __name__ == "__main__":
 		return X1, y1, X2, y2
 
 	def overlapdata_gen():
-		# generate training data in the 2-d case
+		# generate overlapped training data in the 2-d case
+		# to test soft svm
 		mean1 = np.array([0, 2])
 		mean2 = np.array([2, 0])
 		cov = np.array([[2.5, 1.0], [1.0, 2.5]])
@@ -171,6 +176,7 @@ if __name__ == "__main__":
 		return X1, y1, X2, y2
 
 	def training_data_split(X1, y1, X2, y2):
+		# splitting the data in 90:10 ratio for training
 		X1_train = X1[:90]
 		y1_train = y1[:90]
 		X2_train = X2[:90]
@@ -237,7 +243,7 @@ if __name__ == "__main__":
 		pl.axis("tight")
 		pl.show()
 
-	#------------------------------for linear Kernel-----------------------------
+	#------------------------------for Hard SVM-----------------------------
 
 	def test_linear():
 		X1, y1, X2, y2 = lin_separable_data_gen()
