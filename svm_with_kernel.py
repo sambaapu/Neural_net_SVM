@@ -91,7 +91,7 @@ class classifier_SVM(object):
 		self.a = a[sv]
 		self.sv = X[sv]
 		self.sv_y = y[sv]
-		print("%d support vectors out of %d points" % (len(self.a), n_samples))
+		# print("%d support vectors out of %d points" % (len(self.a), n_samples))
 
 		# Intercept or bias term 'b'
 		# for intercept or bias update check "understanding ML theory" by shai ben david
