@@ -11,7 +11,7 @@ from math import exp
 class NeuralNetwork:
     #
     # Initialize the network variables.
-    # Here "hidden_layer_size" is passed as a tuple.
+    # Here "hidden_layer_size" is passed as a list.
     # ith element of the tuple gives the value of number of neuron in that layer
     #
     def __init__(self, input_layer_size=None, output_layer_size=None, hidden_layer_size=None):
