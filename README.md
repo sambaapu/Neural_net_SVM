@@ -15,7 +15,7 @@ Usage of NN classifier is given in Neural_network_iris.py where it is applied on
 
 ######################################################
 
-svm_with_kernel.py contains SVM implementaion with kernels like RBF and Poly.
+svm_with_kernel.py contains SVM implementaion with kernels like RBF and Polynomial.
 
 example of its usage is contained in the same file
 
